@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+  <style type="text/css">
+  h1, h3 {
+      text-align: center;
+    }
+    .blue-square-container {
+      text-align: center;
+    }
+    .blue-square {
+      display: inline-block;
+    }
+
+body {
+     background-image: url(truong-dai-hoc-bach-khoa-dh-da-nang.jpg);
+}
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+function Vidu(){	
+var m= document.f1.t1.value;
+var n="";
+var n3="";
+for (var i = m.length - 1; i >= 0; i--) {
+	var n2 = m.charCodeAt(i);
+	if(n2<=90 && n2>=65) n += m[i].toLowerCase();
+    if(n2<=122 && n2>=97) n += m[i].toUpperCase();
+    if(n2>90 && n2<97 || n2<65 || n2>122) n += m[i];
+};
+
+for(var i= n.length-1;i>=0;i--){
+  n3 += n[i];
+}
+document.f1.t2.value=n3;
+} 
+</SCRIPT>
+</HEAD>
+<BODY onLoad='document.f1.t1.focus()'>
+<form name="f1" method="" value="">
+  <div class="blue-square-container">
+    <div class="blue-square">
+<TABLE >
+<TR>
+  <TH><input type="Text" name="t1" value="" onBlur="Vidu()">
+  </TH>
+  <TH><input type="Text" name="t2" value="">
+  </TH>
+  <TH>
+    <input type="reset" name="f3" value="reset" >
+  </TH>
+</TR>
+<tr>
+  <th>
+    <H>text1</H>
+  </th>
+  <th>
+    <h>
+      text2
+    </h>
+  </th>
+</tr>
+</TABLE>
+</div>
+</div>
+</form>
+</BODY>
+</HTML>

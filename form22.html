@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+  <style type="text/css">
+  h1, h3 {
+      text-align: center;
+    }
+    .blue-square-container {
+      text-align: center;
+    }
+    .blue-square {
+      display: inline-block;
+    }
+
+body {
+    background-color: #93F874;
+}
+</style>
+</HEAD>
+<BODY >
+<form name="f1" method="" value="">
+  <div class="blue-square-container">
+    <div class="blue-square">
+<TABLE >
+<CAPTION>Thong tin sinh vien </CAPTION>
+<TR>
+  
+  <TH>Ma sv: <input type="Text" name="t1" value=""></TH>
+  <TH>
+    <input checked="checked" name="gioitinh" type="radio" value="Nam" />Nam
+    <input name="gioitinh" type="radio" value="Nu" />Nu 
+  </TH>
+</TR>
+
+<TR>
+  <TH>Hoten: <input type="text" name="t2" value=""></TH>
+ <TH rowspan="2">Diachi: <TEXTAREA name="t4"></TEXTAREA> </TH>
+</TR>
+<TR>
+  <TH>Ngay: <input type="text" name="t3" value=""></TH>
+</TR>
+<TR>
+  <TD> Thang: <SELECT Name="Thang">
+<OPTION VALUE="nvalue">1</OPTION>
+<OPTION VALUE="nvalue">2</OPTION>
+<OPTION VALUE="nvalue">3</OPTION>
+<OPTION VALUE="nvalue">4</OPTION>
+<OPTION VALUE="nvalue">5</OPTION>
+<OPTION VALUE="nvalue">6</OPTION>
+<OPTION VALUE="nvalue">7</OPTION>
+<OPTION VALUE="nvalue">8</OPTION>
+<OPTION VALUE="nvalue">9</OPTION>
+<OPTION VALUE="nvalue">10</OPTION>
+<OPTION VALUE="nvalue">11</OPTION>
+<OPTION VALUE="nvalue">12</OPTION>
+</SELECT>
+</TD>
+ <TD>
+   Que quan:              
+ </TD>
+</TR>
+<TR>
+  <Td>nam:   <SELECT Name="Nam">
+<OPTION VALUE="nvalue">1998</OPTION>
+<OPTION VALUE="nvalue">1999</OPTION>
+<OPTION VALUE="nvalue">2000</OPTION>
+<OPTION VALUE="nvalue">2001</OPTION>
+<OPTION VALUE="nvalue">2002</OPTION>
+</SELECT>
+ </Td>
+ <TH><TEXTAREA name="t5"></TEXTAREA> </TH>
+</TR>
+<tr>
+  <td colspan="1">
+    so thich:<input type="checkbox" name="thethao" value="Bong da">sport
+<input type="checkbox" name="thethao" value="">shopping
+<input type="checkbox" name="thethao" value="all">all
+  </td>
+</tr>
+<tr>
+  <th colspan="2">
+    <input type="button" name="f1" id="bt" value="submit" >
+      <script language="javascript">
+            var button = document.getElementById("bt");
+            button.onclick = function(){
+              var jotaro1= document.f1.t1.value
+              var jotaro2= document.f1.t2.value
+              var jotaro3= document.f1.t3.value
+              var jotaro4= document.f1.t4.value
+              var jotaro5= document.f1.t5.value
+              if(jotaro1=="" || jotaro5==""|| jotaro4=="" || jotaro3=="" || jotaro2==""){alert("hãy nhập đầy đủ thông tin");}
+              
+            }
+        </script>
+ 
+    <input type="reset" name="f3" value="reset" >
+  
+    <input type="button" name="f1" value="exit" >
+  </th>
+</tr>
+</TABLE>
+</div>
+</div>
+</form>
+</BODY>
+</HTML>
